@@ -1,0 +1,96 @@
+/*.declaration-order {
+  Posicionamento
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  Box-model
+  display: block;
+  float: right;
+  width: 100px;
+  height: 100px;
+
+  Tipografia
+  font: normal 13px "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+
+  Visual
+  background-color: #F5F5F5;
+  border: 1px solid #E5E5E5;
+  border-radius: 3px;
+
+  Outros
+  opacity: 1;
+} */
+
+/********************************************************************
+COMMUM
+********************************************************************/
+.container{
+    position:relative;
+    margin: 0 auto;
+}
+
+.mdl-card__title-text{margin: .5em 0;}
+.color-deposit{color: #339900}
+.color-draft{color: #990000}
+
+
+/********************************************************************
+Buttons
+********************************************************************/
+.button-send{
+    margin: .5em 0;
+    width: 100%;
+    color: #fff;
+}
+.button-send:hover{color: #333;}
+
+.button-delete{
+    margin-right: .5em;
+    float: right;
+}
+
+.button-deposit{background: #339900;}
+.button-draft{background: #990000;}
+
+/********************************************************************
+Table components
+********************************************************************/
+.table-balance,
+.table-control{ width: 100%}
+
+.table-balance{
+    top: 8em;
+    position: relative;
+}
+.table-control{
+    position: absolute;
+    padding-left: 3em;
+    padding: 1em 0;
+    display: none;
+    float: left;
+    background: #ccc;
+}
+
+.mdl-chip-selected{
+    margin:.8em 0 0 1em;
+    float: left;
+}
+
+.icon-table{
+    top: 0.1em;
+    margin-right: .5em;
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+}
+
+
+
+
