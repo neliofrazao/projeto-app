@@ -13,7 +13,8 @@ $(document).ready( function() {
         return false;
     });
 
-    $(".button-close").on("click", function(){            
+    $(".button-close").on("click", function(){
+        $(".button-transaction").removeClass("active");       
         $(".bank-transaction").fadeOut();
 
         return false;
