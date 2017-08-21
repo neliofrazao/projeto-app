@@ -2,7 +2,6 @@
 <html lang="pt-br">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,71 +10,91 @@
 
     <title>Projeto APP</title>
 
-    <!-- material Core CSS -->
+    <!-- material CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
 
     <!-- Custon CSS -->
     <link rel="stylesheet" href="src/css/scaffolding.css">
-
 </head>
 
 <body>
     <main>
         <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--4-col container" >
-                <!-- <div class="mdl-card mdl-shadow--4dp mdl-cell--8-col">
-                    <div class="mdl-card__supporting-text">
-                        <h3 class="mdl-card__title-text color-deposit">
-                            <i class="material-icons">swap_horiz</i>
-                            Depósito
-                        </h3>
-                        <form action="#">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input field-money" type="text" id="deposit">
-                                <label class="mdl-textfield__label" for="deposit">Informe o valor do depósito</label>
-                          </div>
-                        </form>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect button-send button-deposit">
-                          ok
-                        </button>
-                    </div>
-                </div> -->
-                <!--bank transaction-->
-
-                <!-- <div class="mdl-card mdl-shadow--4dp mdl-cell--8-col">
-                    <div class="mdl-card__supporting-text">
-                        <h3 class="mdl-card__title-text color-draft">
-                            <i class="material-icons">swap_horiz</i>
-                            Saque
-                        </h3>
-                        <form action="#">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="sample3">
-                                <label class="mdl-textfield__label" for="sample3">Informe o valor do Saque</label>
-                          </div>
-                        </form>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect button-send button-draft">
-                          ok
-                        </button>
-                    </div>
-                </div> -->
-                <!--bank transaction-->
-
+            <div class="mdl-cell mdl-cell--4-col container" >                
                 <section>
+                    <div class="transaction-content">
+                        <nav>
+                            <a href="#" title="Realizar Saque" class="button-transaction button-transaction-draft " 
+                                data-transaction="draft">
+                                <i class="material-icons">swap_horiz</i>
+                                Saque    
+                            </a>
+                            <a href="#" title="Realizar Saque" class="button-transaction button-transaction-deposit" 
+                                data-transaction= "deposit">
+                                <i class="material-icons">swap_horiz</i>
+                                Depósito
+                            </a>
+                        </nav>
+                        <span class="balance">
+                            Saldo : R$25,00
+                        </span>
+                        <div class="mdl-card mdl-shadow--4dp mdl-cell--12-col bank-transaction deposit">
+                            <div class="mdl-card__supporting-text">
+                                <h3 class="mdl-card__title-text color-deposit">
+                                    <i class="material-icons">swap_horiz</i>
+                                    Depósito
+                                </h3>
+                                <a href="#" title="Fechar" class="button-close">
+                                    <i class="material-icons">clear</i>
+                                </a>
+                                <form action="#" action="#" method="post">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input field-money" type="text" id="deposit">
+                                        <label class="mdl-textfield__label" for="deposit">Informe o valor do depósito</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <button 
+                                    class="mdl-button mdl-js-button mdl-js-ripple-effect button-send button-deposit"
+                                    title="Realizar Depósito">
+                                    ok
+                                </button>
+                            </div>
+                        </div><!--bank transaction-->
+                
+                        <div class="mdl-card mdl-shadow--4dp mdl-cell--12-col bank-transaction draft">
+                            <div class="mdl-card__supporting-text">
+                                <h3 class="mdl-card__title-text color-draft">
+                                    <i class="material-icons">swap_horiz</i>
+                                    Saque
+                                </h3>
+                                <a href="#" title="Fechar" class="button-close">
+                                    <i class="material-icons">clear</i>
+                                </a>
+                                <form action="#">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="draft">
+                                        <label class="mdl-textfield__label" for="draft">Informe o valor do Saque</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <button 
+                                    class="mdl-button mdl-js-button mdl-js-ripple-effect button-send button-draft"
+                                    title="Realizar saque">
+                                    ok
+                                </button>
+                            </div>
+                        </div><!--bank transaction-->
+                    </div>
                     <div class="table-control">
                         <div class="mdl-chip-selected">
                             <span class="mdl-chip mdl-chip--contact">
                                 <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white select-text">0</span>
                                 <span class="mdl-chip__text">Selecionada(s)</span>
                             </span>
-
                         </div>
                         <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored button-delete">
                             <i class="material-icons">delete_forever</i>
@@ -95,28 +114,30 @@
                           <td class="mdl-data-table__cell--non-numeric color-deposit">
                               <i class="material-icons icon-table ">add_circle_outline</i> Depósito
                           </td>
-                          <td>$2.90</td>
+                          <td>R$15.00</td>
                           <td>19/08/2017</td>
                         </tr>
                         <tr>
                           <td class="mdl-data-table__cell--non-numeric color-draft">
                               <i class="material-icons icon-table">remove_circle_outline</i> Saque
                           </td>
-                          <td>$12.90</td>
+                          <td>R$12,00</td>
                           <td>19/08/2017</td>
                         </tr>
                         <tr>
                           <td class="mdl-data-table__cell--non-numeric color-deposit">
                               <i class="material-icons icon-table">add_circle_outline</i>Depósito
                           </td>
-                          <td>$122.90</td>
+                          <td>R$22,00</td>
                           <td>19/08/2017</td>
                         </tr>
                       </tbody>
                     </table>
                 </section>
-            </div>
-        </div>
+
+                
+            </div><!--/.container-->
+        </div><!--grid-->
     </main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
